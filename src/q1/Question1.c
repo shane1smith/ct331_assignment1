@@ -21,7 +21,9 @@ void createIntPointer(){
 }
 
 void createLong(){
-	long l = 
+	long l = 1000000000;
+	printf(l);
+	printf(sizeof(l));
 }
 
 /*Main is the entry point to the programme
