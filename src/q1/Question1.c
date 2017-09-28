@@ -15,9 +15,9 @@ void createInt(){
 
 void createIntPointer(){
 	int i = 3;
-	int* p = &i;
-	printf(int* p);
-	printf(sizeof(int* p));
+	int *p = &i;
+	printf(int *p);
+	printf(sizeof(int *p));
 }
 
 void createLong(){
@@ -28,17 +28,17 @@ void createLong(){
 
 void createDoublePointer(){
 	double d = 10;
-	double* p = &d;
-	printf(double* p);
-	printf(sizeof(double* p));
+	double *p = &d;
+	printf(double *p);
+	printf(sizeof(double *p));
 }
 
 void createCharPointerPointer(){
 	char c = 'A';
-	char* p = &c;
-	char** q = &p;
-	printf(char** q);
-	printf(sizeof(char** q));
+	char *p = &c;
+	char **q = &p;
+	printf(char **q);
+	printf(sizeof(char **q));
 	
 
 
