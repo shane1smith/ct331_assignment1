@@ -26,7 +26,19 @@ void createLong(){
 	printf(sizeof(l));
 }
 
-void createDouble(){
+void createDoublePointer(){
+	double d = 10;
+	double* p = &d;
+	printf(p);
+	printf(sizeof(p));
+}
+
+void createCharPointerPointer(){
+	char c = 'A';
+	char* p = &c;
+	char** q = &p;
+	printf(q);
+	printf(sizeof(q));
 	
 
 
@@ -34,5 +46,6 @@ void createDouble(){
 There are 2 arguments. arg is the number of
 command line arguments, argv is the arguments.*/ 
 void main(int arg,char* argv[] ){
+	
 	
 }
