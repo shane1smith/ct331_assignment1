@@ -46,6 +46,11 @@ void createCharPointerPointer(){
 There are 2 arguments. arg is the number of
 command line arguments, argv is the arguments.*/ 
 void main(int arg,char* argv[] ){
+	createInt();
+	createIntPointer();
+	createLong();
+	createDoublePointer();
+	createCharPointerPointer();
 	
 	
 }
