@@ -1,11 +1,7 @@
 #include <stdio.h>
+#include <Question1.h>
 
-//Function prototypes
-void createInt();
-void createIntPointer();
-void createLong();
-void createDoublePointer();
-void createCharPointerPointer();
+
 
 void createInt(){
 	int i = 3;
@@ -39,6 +35,7 @@ void createCharPointerPointer(){
 	char **q = &p;
 	printf(char **q);
 	printf(sizeof(char **q));
+}
 	
 
 
