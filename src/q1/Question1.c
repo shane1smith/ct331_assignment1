@@ -9,36 +9,36 @@ void createCharPointerPointer();
 
 void createInt(){
 	int i = 3;
-	printf(i)
-	printf(sizeof(i));
+	printf(int i);
+	printf(sizeof(int i));
 }
 
 void createIntPointer(){
 	int i = 3;
 	int* p = &i;
-	printf(p);
-	printf(sizeof(p));
+	printf(int* p);
+	printf(sizeof(int* p));
 }
 
 void createLong(){
 	long l = 1000000000;
-	printf(l);
-	printf(sizeof(l));
+	printf(long l);
+	printf(sizeof(long l));
 }
 
 void createDoublePointer(){
 	double d = 10;
 	double* p = &d;
-	printf(p);
-	printf(sizeof(p));
+	printf(double* p);
+	printf(sizeof(double* p));
 }
 
 void createCharPointerPointer(){
 	char c = 'A';
 	char* p = &c;
 	char** q = &p;
-	printf(q);
-	printf(sizeof(q));
+	printf(char** q);
+	printf(sizeof(char** q));
 	
 
 
