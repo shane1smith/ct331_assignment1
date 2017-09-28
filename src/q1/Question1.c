@@ -45,7 +45,7 @@ void createCharPointerPointer(){
 /*Main is the entry point to the programme
 There are 2 arguments. arg is the number of
 command line arguments, argv is the arguments.*/ 
-void main(int arg,char* argv[] ){
+void main(int argc,char *argv[] ){
 	createInt();
 	createIntPointer();
 	createLong();
