@@ -5,36 +5,36 @@
 
 void createInt(){
 	int i = 3;
-	printf(int i);
-	printf(sizeof(int i));
+	printf("d%",i);
+	printf("zu%"sizeof(i));
 }
 
 void createIntPointer(){
 	int i = 3;
 	int *p = &i;
-	printf(int *p);
-	printf(sizeof(int *p));
+	printf("p%",p);
+	printf("zu%",sizeof(p));
 }
 
 void createLong(){
 	long l = 1000000000;
-	printf(long l);
-	printf(sizeof(long l));
+	printf("%d",l);
+	printf("%zu",sizeof(l));
 }
 
 void createDoublePointer(){
 	double d = 10;
 	double *p = &d;
-	printf(double *p);
-	printf(sizeof(double *p));
+	printf("%p",p);
+	printf("%zu",sizeof(p));
 }
 
 void createCharPointerPointer(){
 	char c = 'A';
 	char *p = &c;
 	char **q = &p;
-	printf(char **q);
-	printf(sizeof(char **q));
+	printf("%p",q);
+	printf("%zu",sizeof(q));
 }
 	
 
