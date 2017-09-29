@@ -17,5 +17,13 @@ listElement* insertAfter(listElement* after, char* data, size_t size);
 //Delete the element after the given el
 void deleteAfter(listElement* after);
 
+//Returns the length of the list.
+int length(listElement* list);
+
+//Pushes a new element on to the head of the list.
+void push(listElement** list, char* data, size_t size);
+
+//Pop an element from the head of a list.
+listElement* pop(listElement** list);
 
 #endif
