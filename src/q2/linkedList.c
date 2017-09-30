@@ -59,3 +59,14 @@ void deleteAfter(listElement* after){
   free(delete->data);
   free(delete);
 }
+
+//Function that returns the length of the list.
+int length(listElement* list){
+  listElement* head = list;
+  int count = 0;
+  
+  while(head != NULL){
+    count++;
+    head = head->next;
+  }
+  return count; }
