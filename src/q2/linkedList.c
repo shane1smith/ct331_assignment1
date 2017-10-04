@@ -70,3 +70,42 @@ int length(listElement* list){
     head = head->next;
   }
   return count; }
+
+//Pushes an element to the head of a linked list on the stack
+void push(listElement** list,char* data,size_t size){
+  listElement *temp = malloc(sizeof(listElement));
+  temp->data = data;
+  temp->next = *list;
+  *list = temp;
+}
+//Pops an element from the head of a list
+listElement* pop(listElement ** list){
+  listElement* temp = *list;
+  if (temp){
+    *list = temp->next;
+  }
+  return temp;}
+
+//Implements a queue data structure
+//Enqueue's an element
+void enQueue(listElement** list,char* data,size_t size){
+  if (rear == NULL)
+  {
+    rear = (struct listElement*)malloc(1*sizeof(struct listElement));
+    rear->next = NULL;
+    rear->data = data;
+  }
+  else {
+    temp = (struct listElement*)malloc(1*sizeof(struct listElement));
+    rear->next = temp;
+    temp->data = data;
+    temp->next = NULL;
+    rear = temp;
+  }
+}
+
+//Dequeue's an element
+
+
+
+                         
