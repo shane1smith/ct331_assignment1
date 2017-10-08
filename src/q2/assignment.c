@@ -18,11 +18,19 @@ int main(int arg, char* argc[]){
   tail->next = NULL;
   
   //Use traverse function to see that the elements were all created
-  traverse(head);
+  traverse(&head);
   
   //Test out the length function
-  int length = length(head);
+  int length = length(&head);
   printf("The length of the list is %d",length);
+  
+  //Test out push function
+  struct listElement* e = createEl('d',size);
+  push(&e, 'd', size);
+  
+  //Test out pop function
+  pop(&e);
+  
   
   
   
